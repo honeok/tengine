@@ -1,9 +1,8 @@
-FROM alpine:3.19.1
-
+FROM alpine:3.20.3
 
 ENV TENGINE_VERSION 3.1.0
 
-# nginx: https://git.io/vSIyj
+# nginx: https://github.com/nginxinc/docker-nginx/blob/master/mainline/alpine/Dockerfile
 
 RUN rm -rf /var/cache/apk/* && \
     rm -rf /tmp/*
